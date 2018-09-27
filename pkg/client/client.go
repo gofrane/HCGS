@@ -31,7 +31,7 @@ func Client() ( *kubernetes.Clientset , error  ){
 
 	// Creates the clientset
 	clientset, err1 := kubernetes.NewForConfig(config)
-	if err != nil {
+	if err1 != nil {
 		panic(err1.Error())
 	}
 
